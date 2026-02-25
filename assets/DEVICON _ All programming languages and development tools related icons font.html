@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<!-- saved from url=(0020)https://devicon.dev/ -->
+<html class="no-js ng-scope" ng-app="devicon" ng-controller="IconListCtrl"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide{display:none !important;}ng\:form{display:block;}.ng-animate-block-transitions{transition:0s all!important;-webkit-transition:0s all!important;}.ng-hide-add-active,.ng-hide-remove{display:block!important;}</style>
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>DEVICON | All programming languages and development tools related icons font</title>
+  <meta name="description" content="Devicon aims to gather all logos representing development languages and tools in one font. 🚀">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="https://devicon.dev/logos/favicon.ico" sizes="196x196">
+  <link rel="apple-touch-icon" sizes="57x57" href="https://devicon.dev/logos/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="https://devicon.dev/logos/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="https://devicon.dev/logos/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="https://devicon.dev/logos/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="https://devicon.dev/logos/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="https://devicon.dev/logos/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="https://devicon.dev/logos/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="https://devicon.dev/logos/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://devicon.dev/logos/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="https://devicon.dev/logos/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="https://devicon.dev/logos/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="https://devicon.dev/logos/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="https://devicon.dev/logos/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="https://devicon.dev/manifest.json">
+  <link rel="mask-icon" href="https://devicon.dev/logos/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-TileImage" content="./logos/mstile-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" type="text/css" ng-href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" href="./DEVICON _ All programming languages and development tools related icons font_files/devicon.min.css">
+  <link rel="stylesheet" href="./DEVICON _ All programming languages and development tools related icons font_files/style.css">
+  <meta property="og:title" content="Devicon">
+  <meta property="og:image" content="https://raw.githubusercontent.com/devicons/devicon/master/icons/devicon/devicon-original-wordmark.svg">
+  <meta property="og:url" content="https://devicon.dev">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:description" content="Devicon aims to gather all logos representing development languages and tools in one font. 🚀">
+</head>
+
+<body>
+  <noscript style="color:red; text-align:center;">
+    <h1>To use this website, JavaScript needs to be enabled.</h1>
+    <p>You can come back when you turn it on though :)</p>
+  </noscript>
+  <div class="borders"></div>
+
+  <div class="container">
+    <header class="clearfix">
+      <h1>Devicon <span><a href="https://github.com/devicons/devicon/releases" class="ng-binding">v2.17.0</a></span></h1>
+      <h2>Devicon is a set of icons representing programming languages, designing, and development tools. You can use it as a font or directly copy/paste the SVG code into your project.</h2>
+      <i>*Please read the legal conditions of using the logos here at the bottom of this header</i>
+      <h3>(Super) Quick Setup</h3>
+      <h5>First select an icon on the right, then select the version below and copy/paste the code into your project.</h5>
+      <ul>
+        <li>
+          <h4>
+            Font versions 
+            <span>
+              <img src="./DEVICON _ All programming languages and development tools related icons font_files/color_wheel.png" class="colorPicker" ng-click="toggleColorPickerMenu(&#39;fontColorPickerMenu&#39;)">
+              <span class="colorPickerMenu" id="fontColorPickerMenu">
+                <div>
+                  <input type="color" value="#60be86" ng-model="fontBackground" class="ng-pristine ng-valid">
+                  Background Color 
+                </div>
+                <div>
+                  <input type="checkbox" id="checkboardInputFont" class="checkerboardInput ng-pristine ng-valid" ng-model="fontDisplayCheckerboard">
+                  <label for="checkboardInputFont">Checkerboard</label>
+                </div>
+                <button class="colorPickerBtn" ng-click="toggleColorPickerMenu(&#39;fontColorPickerMenu&#39;)">Close</button>
+                <button class="colorPickerBtn" ng-click="fontBackground = DEFAULT_BACKGROUND; fontDisplayCheckerboard=0; toggleColorPickerMenu(&#39;fontColorPickerMenu&#39;)">Reset</button>
+              </span>
+            </span>
+          </h4>
+          <p>
+            Place this in your header (once per HTML file) 
+            <span>
+              <img src="./DEVICON _ All programming languages and development tools related icons font_files/copy.svg" class="copyBtn" ng-click="copyToClipboard($event, &#39;headerLinkCode&#39;)">
+              <span class="tooltip"></span>
+            </span>
+          </p>
+          <div class="cde ng-binding" id="headerLinkCode">
+            &lt;link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" /&gt;
+          </div>
+
+          <ul class="icons-list">
+            <!-- ngRepeat: fontVersion in selectedIcon.font --><div ng-repeat="fontVersion in selectedIcon.font" class="ng-scope">
+              <li ng-click="selectFont(fontVersion, false, $index)" ng-class="{&#39;selected-version&#39; : ($index == selectedFontIndex &amp;&amp; !colored)}" ng-style="{&#39;background-color&#39;: fontBackground}" class="selected-version" style="background-color: rgb(61, 149, 97);">
+                <img src="./DEVICON _ All programming languages and development tools related icons font_files/checkerboard.png" ng-style="{&#39;visibility&#39;: fontDisplayCheckerboard ? &#39;visible&#39; : &#39;hidden&#39;}" style="visibility: hidden;">
+                <i class="devicon-aarch64-plain"></i>
+              </li>
+              <li ng-click="selectFont(fontVersion, true, $index)" ng-class="{&#39;selected-version&#39; : ($index == selectedFontIndex &amp;&amp; colored)}" ng-style="{&#39;background-color&#39;: fontBackground}" style="background-color: rgb(61, 149, 97);">
+                <img src="./DEVICON _ All programming languages and development tools related icons font_files/checkerboard.png" ng-style="{&#39;visibility&#39;: fontDisplayCheckerboard ? &#39;visible&#39; : &#39;hidden&#39;}" style="visibility: hidden;">
+                <i class="devicon-aarch64-plain colored"></i>
+              </li>
+            </div><!-- end ngRepeat: fontVersion in selectedIcon.font --><div ng-repeat="fontVersion in selectedIcon.font" class="ng-scope">
+              <li ng-click="selectFont(fontVersion, false, $index)" ng-class="{&#39;selected-version&#39; : ($index == selectedFontIndex &amp;&amp; !colored)}" ng-style="{&#39;background-color&#39;: fontBackground}" style="background-color: rgb(61, 149, 97);">
+                <img src="./DEVICON _ All programming languages and development tools related icons font_files/checkerboard.png" ng-style="{&#39;visibility&#39;: fontDisplayCheckerboard ? &#39;visible&#39; : &#39;hidden&#39;}" style="visibility: hidden;">
+                <i class="devicon-aarch64-line"></i>
+              </li>
+              <li ng-click="selectFont(fontVersion, true, $index)" ng-class="{&#39;selected-version&#39; : ($index == selectedFontIndex &amp;&amp; colored)}" ng-style="{&#39;background-color&#39;: fontBackground}" style="background-color: rgb(61, 149, 97);">
+                <img src="./DEVICON _ All programming languages and development tools related icons font_files/checkerboard.png" ng-style="{&#39;visibility&#39;: fontDisplayCheckerboard ? &#39;visible&#39; : &#39;hidden&#39;}" style="visibility: hidden;">
+                <i class="devicon-aarch64-line colored"></i>
+              </li>
+            </div><!-- end ngRepeat: fontVersion in selectedIcon.font -->
+          </ul>
+          <p>
+            Place this in your body 
+            <span>
+              <img src="./DEVICON _ All programming languages and development tools related icons font_files/copy.svg" class="copyBtn" ng-click="copyToClipboard($event, &#39;iconClassCode&#39;)">
+              <span class="tooltip"></span>
+            </span>
+          </p>
+          <div class="cde ng-binding" id="iconClassCode">
+            &lt;i class="devicon-aarch64-plain<!-- ngIf: colored -->"&gt;&lt;/i&gt;<br>
+          </div>
+          <p><i>*To change the size, change the &lt;i&gt;'s <code>`font-size`</code>.</i></p>
+        </li>
+        <li>
+          <h4>
+            SVG versions 
+            <span>
+              <img src="./DEVICON _ All programming languages and development tools related icons font_files/color_wheel.png" class="colorPicker" ng-click="toggleColorPickerMenu(&#39;svgColorPickerMenu&#39;)">
+              <span class="colorPickerMenu" id="svgColorPickerMenu">
+                <div>
+                  <input type="color" value="#60be86" ng-model="svgBackground" class="ng-pristine ng-valid">
+                  Background Color 
+                </div>
+                <div>
+                  <input type="checkbox" id="checkboardInputSvg" class="checkerboardInput ng-pristine ng-valid" ng-model="svgDisplayCheckerboard">
+                  <label for="checkboardInputSvg">Checkerboard</label>
+                </div>
+                <button class="colorPickerBtn" ng-click="toggleColorPickerMenu(&#39;svgColorPickerMenu&#39;)">Close</button>
+                <button class="colorPickerBtn" ng-click="svgBackground = DEFAULT_BACKGROUND; svgDisplayCheckerboard=0; toggleColorPickerMenu(&#39;svgColorPickerMenu&#39;)">Reset</button>
+              </span>
+            </span>
+          </h4>
+          <ul class="icons-list">
+            <!-- ngRepeat: svgVersion in selectedIcon.svg --><li ng-repeat="svgVersion in selectedIcon.svg" ng-click="selectSvg(svgVersion, $index)" ng-class="{&#39;selected-version&#39; : $index == selectedSvgIndex}" ng-style="{&#39;background-color&#39;: svgBackground}" class="ng-scope selected-version" style="background-color: rgb(61, 149, 97);">
+              <img src="./DEVICON _ All programming languages and development tools related icons font_files/checkerboard.png" ng-style="{&#39;visibility&#39;: svgDisplayCheckerboard ? &#39;visible&#39; : &#39;hidden&#39;}" style="visibility: hidden;">
+              <img class="svgLogo" ng-src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/aarch64/aarch64-original.svg" src="./DEVICON _ All programming languages and development tools related icons font_files/aarch64-original.svg">
+            </li><!-- end ngRepeat: svgVersion in selectedIcon.svg --><li ng-repeat="svgVersion in selectedIcon.svg" ng-click="selectSvg(svgVersion, $index)" ng-class="{&#39;selected-version&#39; : $index == selectedSvgIndex}" ng-style="{&#39;background-color&#39;: svgBackground}" class="ng-scope" style="background-color: rgb(61, 149, 97);">
+              <img src="./DEVICON _ All programming languages and development tools related icons font_files/checkerboard.png" ng-style="{&#39;visibility&#39;: svgDisplayCheckerboard ? &#39;visible&#39; : &#39;hidden&#39;}" style="visibility: hidden;">
+              <img class="svgLogo" ng-src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/aarch64/aarch64-plain.svg" src="./DEVICON _ All programming languages and development tools related icons font_files/aarch64-plain.svg">
+            </li><!-- end ngRepeat: svgVersion in selectedIcon.svg --><li ng-repeat="svgVersion in selectedIcon.svg" ng-click="selectSvg(svgVersion, $index)" ng-class="{&#39;selected-version&#39; : $index == selectedSvgIndex}" ng-style="{&#39;background-color&#39;: svgBackground}" class="ng-scope" style="background-color: rgb(61, 149, 97);">
+              <img src="./DEVICON _ All programming languages and development tools related icons font_files/checkerboard.png" ng-style="{&#39;visibility&#39;: svgDisplayCheckerboard ? &#39;visible&#39; : &#39;hidden&#39;}" style="visibility: hidden;">
+              <img class="svgLogo" ng-src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/aarch64/aarch64-line.svg" src="./DEVICON _ All programming languages and development tools related icons font_files/aarch64-line.svg">
+            </li><!-- end ngRepeat: svgVersion in selectedIcon.svg -->
+          </ul>
+          <p>
+            Using &lt;img&gt; element 
+            <span>
+              <img src="./DEVICON _ All programming languages and development tools related icons font_files/copy.svg" class="copyBtn" ng-click="copyToClipboard($event, &#39;imgCode&#39;)">
+              <span class="tooltip"></span>
+            </span>
+          </p>
+          <div class="cde ng-binding" id="imgCode">
+            &lt;img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/aarch64/aarch64-original.svg" /&gt;<br>
+          </div>
+          <p><i>*To change the size, change the &lt;img&gt;'s <code>`height`</code> and <code>`width`</code>.</i></p>
+
+          <br>
+
+          <p>
+            Using Pure SVG 
+            <span>
+              <img src="./DEVICON _ All programming languages and development tools related icons font_files/copy.svg" class="copyBtn" ng-click="copyToClipboard($event, &#39;svgCode&#39;)">
+              <span class="tooltip"></span>
+            </span>
+          </p>
+          <div class="cde" id="svgCode">
+            &lt;svg viewBox="0 0 128 128"&gt;<br>
+            <div class="cde-ind ng-binding">
+    &lt;g fill="#1b3888"&gt;
+        &lt;path d="M70.089 26.264c-11.411-6.789-25.108-8.22-37.713-4.746C17.432 25.636 5.38 37.116.079 51.603q-.024.066-.051.002-.009-.025-.021-.048-.011-.024-.005-.05 5.007-19.766 21.5-31.155c18.216-12.576 42.79-12.044 60.643.992a.114.114 0 0 1-.023.2l-11.654 4.748a.428.426-40.7 0 1-.38-.028zM71.325 26.978a.03.03 0 0 1 .004-.053l11.754-4.79a.159.157 53.2 0 1 .157.022q15.7 12.43 19.523 31.957c1.583 8.085.993 16.763-1.342 24.58-6.383 21.37-26.086 36.61-48.391 37.292q-1.702.053-.017-.197 15.939-2.362 27.578-14.218c9.91-10.092 14.767-24.64 13.257-38.754q-1.105-10.342-6.506-19.415-5.976-10.043-16.017-16.424z"&gt;&lt;/path&gt;
+    &lt;/g&gt;
+    &lt;path fill="#45a945" d="M110.985 10.209h.22Q126.873 27.613 128 51.114v4.793q-1.1 23.145-16.098 40.192c-12.77 14.514-31.675 22.415-51.067 21.64q-1.181-.049-2.343-.21-.007-.002 0-.002 21.11-.9 36.825-14.431c12.675-10.914 20.095-27.247 20.07-44.035-.026-16.352-6.81-31.694-18.68-42.812a.131.131 0 0 1 .04-.218z"&gt;&lt;/path&gt;
+    &lt;g fill="#221e1f"&gt;
+        &lt;path d="M45.531 33.66q1.107.914 1.543 1.642 1.4 2.34 2.937 4.6.078.112-.06.112l-2.089-.01a.21.207-14.8 0 1-.176-.102c-.965-1.602-1.962-3.38-3.182-4.79q-1.033-1.195-2.644-.953-.076.012-.076.089V39.9q0 .108-.106.108H40.01q-.19 0-.188-.188l.074-13.263q0-.098.097-.098c1.672-.01 3.817-.203 5.233.324 2.958 1.1 3.256 5.371.322 6.743q-.114.053-.017.133zm-3.715-5.45-.009 4.065a.049.049 0 0 0 .049.048l1.573.005a2.117 1.86.1 0 0 2.121-1.857v-.44a2.117 1.86.1 0 0-2.113-1.866l-1.573-.002a.049.049 0 0 0-.048.047z"&gt;&lt;/path&gt;
+        &lt;path d="M53.476 31.047c-2.095 2.364-1.983 5.86.756 7.693 1.848 1.239 4.272 1.321 6.35.68a.095.097-.3 0 1 .12.12l-.557 1.84q-.034.112-.15.133-3.504.635-6.42-.959c-4.02-2.197-4.642-7.314-1.737-10.665 3.148-3.631 8.288-2.59 11.455.394q.091.086.053.205l-.548 1.795q-.049.157-.155.032c-2.314-2.695-6.533-4.238-9.167-1.268ZM34.074 37.32l-5.242 1.522a.08.08 0 0 0-.057.067l-.47 4.19a.08.08 0 0 1-.06.068l-1.756.495a.08.08 0 0 1-.102-.087l1.636-14.542a.08.08 0 0 1 .06-.067l1.225-.343a.08.08 0 0 1 .085.025l9.391 11.337a.08.08 0 0 1-.038.127l-1.76.527a.08.08 0 0 1-.084-.025l-2.743-3.27a.08.08 0 0 0-.085-.024zm-5.068-.492a.064.064 0 0 0 .082.068l3.652-1.09a.064.064 0 0 0 .032-.1l-3.125-3.808a.064.064 0 0 0-.112.034zM73.059 39.509l2.456-5.12a.102.102 0 0 1 .135-.048l1.596.747a.102.102 0 0 1 .05.138L71.51 47.308a.102.102 0 0 1-.135.048l-1.594-.755a.102.102 0 0 1-.049-.136l2.454-5.134a.102.102 0 0 0-.047-.135l-6.425-3.064a.102.102 0 0 0-.136.047l-2.443 5.132a.102.102 0 0 1-.135.048l-1.6-.755a.102.102 0 0 1-.05-.138l5.787-12.084a.102.102 0 0 1 .135-.047l1.598.765a.102.102 0 0 1 .047.135l-2.466 5.126a.102.102 0 0 0 .048.135l6.423 3.06a.102.102 0 0 0 .136-.047zM20.64 42.112l-4.792 2.596a.083.083 0 0 0-.042.08l.428 4.196a.083.083 0 0 1-.043.08l-1.602.85a.083.083 0 0 1-.121-.066L12.965 35.29a.083.083 0 0 1 .044-.08l1.122-.584a.083.083 0 0 1 .09.006l11.6 9.084a.083.083 0 0 1-.01.138l-1.611.872a.083.083 0 0 1-.089-.006l-3.383-2.6a.083.083 0 0 0-.089-.007zm-5.048.564a.066.066 0 0 0 .095.048l3.339-1.806a.066.066 0 0 0 .01-.11l-3.903-3.048a.066.066 0 0 0-.104.06zM18.078 76.495c9.624-5.043 20.785.733 20.857 11.991.042 6.849-4.88 13.113-11.718 14.364q-1.96.36-4.217.142c-6.02-.578-10.621-4.243-12.677-9.895Q9.28 90.233 9.17 87.425c-.548-13.953 7.825-26.289 19.223-33.656q.082-.055.142.023l4.054 5.147a.097.097 0 0 1-.026.144c-6.402 3.844-12.28 10.102-14.6 17.315q-.062.188.114.097zm13.851 11.79c-.216-5-4.854-7.583-9.467-6.993q-3.28.422-5.976 2.481-.08.064-.104.161c-1.209 5 .559 11.005 6.15 12.343q1.725.415 3.431.055c4.012-.85 6.134-4.129 5.966-8.047zM69.464 86.773v15.599a.087.087 0 0 1-.087.086h-6.76a.087.087 0 0 1-.086-.086V86.773a.087.087 0 0 0-.087-.087H42.188a.087.087 0 0 1-.086-.086l-.003-3.112a.087.087 0 0 1 .02-.055l24.318-29.687a.087.087 0 0 1 .065-.032h2.875a.087.087 0 0 1 .087.087v26.5a.087.087 0 0 0 .087.087h5.015a.087.087 0 0 1 .087.087l-.002 6.125a.087.087 0 0 1-.087.086h-5.013a.087.087 0 0 0-.087.087zm-6.933-19.93a.064.064 0 0 0-.112-.04L51.554 80.285a.064.064 0 0 0 .05.103h10.863a.064.064 0 0 0 .064-.063z"&gt;&lt;/path&gt;
+    &lt;/g&gt;
+    &lt;path fill="#0581ab" d="M114.095 52.37c3.836 33.88-22.178 63.495-56.162 64.247q-.049 0-.01-.03l.044-.036q.02-.02.05-.025 18.857-2.672 31.817-16.14c16.212-16.85 19.282-42.72 7.753-63.007q-5.162-9.086-13.329-15.573a.093.093 0 0 1 .023-.159l11.593-4.72a.246.246 0 0 1 .26.048c9.92 9.368 16.418 21.78 17.961 35.394z"&gt;&lt;/path&gt;
+</div>
+            &lt;/svg&gt;
+          </div>
+          <p><i>*To change the size, change the &lt;svg&gt;'s <code>`height`</code> and <code>`width`</code>.</i></p>
+        </li>
+      </ul>
+
+      <h3>GitHub repository</h3>
+      <h5>If you prefer a local install, you can download all the files on the GitHub repository.</h5>
+      <h5>Check out our <a href="https://github.com/devicons/devicon#building-devicon">ultimate guide</a> in order to compile Devicon locally.</h5>
+      <p class="buttonLink">
+        <a href="https://github.com/devicons/devicon/archive/master.zip"><i class="devicon-github-original"></i>DOWNLOAD</a>
+      </p>
+      <p class="buttonLink">
+        <a href="https://github.com/devicons/devicon/" target="blank"><i class="devicon-github-original"></i>GO TO THE REPOSITORY</a>
+      </p>
+      <p class="buttonLink">
+        <a href="https://github.com/devicons/devicon/blob/master/CONTRIBUTING.md" target="blank"><i class="devicon-github-original"></i>CONTRIBUTE</a>
+      </p>
+      <p class="buttonLink">
+        <a href="https://discord.gg/hScy8KWACQ" target="blank"><i class="discord-logo"></i>DISCORD COMMUNITY</a>
+      </p>
+
+      <h3>Contact</h3>
+      <h5>If you have any legal concerns regarding copyrights or want to report an abuse, please reach out to us via <b><a href="mailto:info@devicon.dev">info@devicon.dev</a> or our <a href="https://discord.gg/hScy8KWACQ" target="blank">Discord community</a></b>. Any code/logo contributions should be made through our GitHub repository listed above.</h5>
+
+      <footer>
+        Originally created by <a href="https://github.com/konpa">Konpa</a> (under the <a href="https://github.com/devicons/devicon/blob/master/LICENSE">MIT License</a>) and <br>
+        supported by many <a href="https://github.com/devicons/devicon/graphs/contributors">contributors</a>.<br>
+        Copyright © 2015 <a href="https://github.com/konpa">Konpa</a><br>
+        <br>
+        Final font built with <a href="https://icomoon.io/">IcoMoon</a><br>
+        <br>
+        <i>*All product names, logos, and brandsare property of their respective owners.  All company, product and service names used in this website are for identification purposes only.  Usage of these names, logos, and brands does not imply endorsement of Devicon or its members. All icons/SVGs in this project are not monetized in anyway. It is up to the user to use the logo properly according to the company/group's brand policy. Usage of this site or any icons/SVGs from Devicon means acknowledgement of these conditions.</i>
+      </footer>
+    </header>
+
+    <div class="main">
+
+      <div class="search">
+        <input type="text" placeholder="Search for icons" ng-model="search" class="ng-valid ng-dirty">
+        <input type="text" class="result" value="12" title="Number of icons in the current search" disabled="">
+      </div>
+
+      <ul class="computed-data">
+        <li title="The number of icons.
+For example: devicon" class="ng-binding">Total icons: 578</li>
+        <li title="The number of icon versions.
+For example: devicon-plain" class="ng-binding">Total icon version: 3067</li>
+        <li title="The number of icon versions per icon.
+Calculated by dividing icon version by icons: 5.31" class="ng-binding">Average icon versions per icon: 5</li>
+      </ul>
+
+      <ul class="cbp-ig-grid">
+        <!-- ngRepeat: icon in filtered = (icons | filter:search) --><li data-ng-repeat="icon in filtered = (icons | filter:search)" class="ng-scope">
+          <span ng-class="{&#39;selected&#39;: icon.selected}" ng-click="selectIcon(icon)">
+            <i class="cbp-ig-icon devicon-digitalocean-original"></i>
+            <h3 class="cbp-ig-title ng-binding">digitalocean</h3>
+          </span>
+        </li><!-- end ngRepeat: icon in filtered = (icons | filter:search) --><li data-ng-repeat="icon in filtered = (icons | filter:search)" class="ng-scope">
+          <span ng-class="{&#39;selected&#39;: icon.selected}" ng-click="selectIcon(icon)">
+            <i class="cbp-ig-icon devicon-git-plain"></i>
+            <h3 class="cbp-ig-title ng-binding">git</h3>
+          </span>
+        </li><!-- end ngRepeat: icon in filtered = (icons | filter:search) --><li data-ng-repeat="icon in filtered = (icons | filter:search)" class="ng-scope">
+          <span ng-class="{&#39;selected&#39;: icon.selected}" ng-click="selectIcon(icon)">
+            <i class="cbp-ig-icon devicon-gitbook-original"></i>
+            <h3 class="cbp-ig-title ng-binding">gitbook</h3>
+          </span>
+        </li><!-- end ngRepeat: icon in filtered = (icons | filter:search) --><li data-ng-repeat="icon in filtered = (icons | filter:search)" class="ng-scope">
+          <span ng-class="{&#39;selected&#39;: icon.selected}" ng-click="selectIcon(icon)">
+            <i class="cbp-ig-icon devicon-github-original"></i>
+            <h3 class="cbp-ig-title ng-binding">github</h3>
+          </span>
+        </li><!-- end ngRepeat: icon in filtered = (icons | filter:search) --><li data-ng-repeat="icon in filtered = (icons | filter:search)" class="ng-scope">
+          <span ng-class="{&#39;selected&#39;: icon.selected}" ng-click="selectIcon(icon)">
+            <i class="cbp-ig-icon devicon-githubactions-plain"></i>
+            <h3 class="cbp-ig-title ng-binding">githubactions</h3>
+          </span>
+        </li><!-- end ngRepeat: icon in filtered = (icons | filter:search) --><li data-ng-repeat="icon in filtered = (icons | filter:search)" class="ng-scope">
+          <span ng-class="{&#39;selected&#39;: icon.selected}" ng-click="selectIcon(icon)">
+            <i class="cbp-ig-icon devicon-githubcodespaces-plain"></i>
+            <h3 class="cbp-ig-title ng-binding">githubcodespaces</h3>
+          </span>
+        </li><!-- end ngRepeat: icon in filtered = (icons | filter:search) --><li data-ng-repeat="icon in filtered = (icons | filter:search)" class="ng-scope">
+          <span ng-class="{&#39;selected&#39;: icon.selected}" ng-click="selectIcon(icon)">
+            <i class="cbp-ig-icon devicon-gitkraken-original"></i>
+            <h3 class="cbp-ig-title ng-binding">gitkraken</h3>
+          </span>
+        </li><!-- end ngRepeat: icon in filtered = (icons | filter:search) --><li data-ng-repeat="icon in filtered = (icons | filter:search)" class="ng-scope">
+          <span ng-class="{&#39;selected&#39;: icon.selected}" ng-click="selectIcon(icon)">
+            <i class="cbp-ig-icon devicon-gitlab-plain"></i>
+            <h3 class="cbp-ig-title ng-binding">gitlab</h3>
+          </span>
+        </li><!-- end ngRepeat: icon in filtered = (icons | filter:search) --><li data-ng-repeat="icon in filtered = (icons | filter:search)" class="ng-scope">
+          <span ng-class="{&#39;selected&#39;: icon.selected}" ng-click="selectIcon(icon)">
+            <i class="cbp-ig-icon devicon-gitpod-plain"></i>
+            <h3 class="cbp-ig-title ng-binding">gitpod</h3>
+          </span>
+        </li><!-- end ngRepeat: icon in filtered = (icons | filter:search) --><li data-ng-repeat="icon in filtered = (icons | filter:search)" class="ng-scope">
+          <span ng-class="{&#39;selected&#39;: icon.selected}" ng-click="selectIcon(icon)">
+            <i class="cbp-ig-icon devicon-gitter-plain"></i>
+            <h3 class="cbp-ig-title ng-binding">gitter</h3>
+          </span>
+        </li><!-- end ngRepeat: icon in filtered = (icons | filter:search) --><li data-ng-repeat="icon in filtered = (icons | filter:search)" class="ng-scope">
+          <span ng-class="{&#39;selected&#39;: icon.selected}" ng-click="selectIcon(icon)">
+            <i class="cbp-ig-icon devicon-tortoisegit-plain"></i>
+            <h3 class="cbp-ig-title ng-binding">tortoisegit</h3>
+          </span>
+        </li><!-- end ngRepeat: icon in filtered = (icons | filter:search) --><li data-ng-repeat="icon in filtered = (icons | filter:search)" class="ng-scope">
+          <span ng-class="{&#39;selected&#39;: icon.selected}" ng-click="selectIcon(icon)">
+            <i class="cbp-ig-icon devicon-towergit-plain"></i>
+            <h3 class="cbp-ig-title ng-binding">towergit</h3>
+          </span>
+        </li><!-- end ngRepeat: icon in filtered = (icons | filter:search) -->
+      </ul>
+    </div>
+  </div>
+
+  <script async="" src="./DEVICON _ All programming languages and development tools related icons font_files/analytics.js"></script><script src="./DEVICON _ All programming languages and development tools related icons font_files/angular.min.js"></script>
+  <script src="./DEVICON _ All programming languages and development tools related icons font_files/angular-sanitize.min.js"></script>
+  <script src="./DEVICON _ All programming languages and development tools related icons font_files/angular-animate.min.js"></script>
+  
+  <script>
+    document.write("<script src='assets/js/script.js?" + Date.now() + "'><\/script>");
+  </script><script src="./DEVICON _ All programming languages and development tools related icons font_files/script.js"></script>
+
+  <script>
+    (function(i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function() {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-45588276-4', 'devicon.fr');
+    ga('send', 'pageview');
+  </script>
+
+
+
+</body></html>
