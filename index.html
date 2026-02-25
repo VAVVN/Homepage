@@ -1,16 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <!-- Import Playfair Display và Roboto -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <!--Link đến icon-->
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <div class="container">
-        <h1>Welcome to My Website</h1>
-        <p>This is a sample webpage created to demonstrate HTML structure and styling.</p>
-        <button class="btn">Click Me</button>
+    <div class="container my-profile">
+        <!-- set profile picture to sit on left on desktop, on top left on tablet and on top on mobile  -->
+        <img src="./assets/profile.jpg" alt="Profile Picture" class="profile-pic">
+        <!-- set name and about me to sit on right on desktop, on top right on tablet and under my profile picture on mobile  -->
+        <div class="profile-info">
+            <h2>About me</h2>
+            <p>My name is Vương Anh Vũ, it's a Vietnamese name. I am an engineer with strong English skills, holding an IELTS score of 8.0. My fascination lies in how computers transform ideas into reality, which inspired me to pursue web development. I want to help people publish their ideas to the world and contribute to moving society forward through technology. Alongside my technical journey, I am also an English teacher. I believe English is the language of today’s technology-driven world, and I am passionate about guiding the younger generation in Vietnam to master it for a brighter future. Teaching allows me to empower students with the tools they need to connect globally and unlock opportunities. Beyond work, I enjoy playing tennis, which keeps me active and competitive, and I find peace in nature, which balances my life. Together, these passions shape who I am: a developer, a teacher, and a lifelong learner.</p>
+            <i class="devicon-github-original colored"></i>
+        </div>
+    </div>
+    <div class="container my-works">
+        <h2>My work</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>GitHub</li>
+            <li>React</li>
+            <li>Node.js</li>
+        </ul>
+         <i class="devicon-github-original colored"></i>
+    </div>
+    <div class="container my-contact">
+        <h2>Contact me</h2>
+        <p>mail: <a href="mailto:anhvuvuongbs@gmail.com">anhvuvuongbs@gmail.com</a></p>
+        <i class="devicon-github-original-wordmark"></i>
     </div>
 </body>
+
 </html>
