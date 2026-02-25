@@ -1,38 +1,53 @@
 .container.my-profile {
-  display: flex;
-  align-items: center;
-  gap: 24px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
 }
 
 .profile-pic {
-  /* responsive avatar: min 96px, ideal 20vw, max 440px */
-  width: clamp(96px, 20vw, 440px);
-  height: clamp(96px, 20vw, 440px);
-  border-radius: 50%;
-  object-fit: cover;
-  flex-shrink: 0;
+    /* responsive avatar: min 96px, ideal 20vw, max 440px */
+    width: clamp(96px, 20vw, 440px);
+    height: clamp(96px, 20vw, 440px);
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
 }
 
 .profile-info {
-  flex: 1;       /* allow info to take remaining space */
-  min-width: 0;  /* allow child content to wrap/overflow correctly inside flex */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    /* allow info to take remaining space */
+    min-width: 0;
+    position: relative;
+    /* anchor absolute children */
+    padding-bottom: 36px;
+    /* leave space so text doesn't overlap the icon */
+}
+
+/* place the GitHub icon at the bottom-left of the .profile-info box */
+.profile-info .devicon-github-original {
+    margin-top: 16px;
+    font-size: 32px;
+    /* adjust as needed */
+    color: inherit;
 }
 
 /* Responsive: stack on narrow viewports */
 @media (max-width: 768px) {
-  .container.my-profile {
-    flex-direction: column;
-    align-items: flex-start;
-  }
+    .container.my-profile {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
-  .profile-pic {
-    width: 120px;
-    height: 120px;
-  }
+    .profile-pic {
+        width: 120px;
+        height: 120px;
+    }
 
-  .profile-info {
-    margin-top: 12px;
-  }
+    .profile-info {
+        margin-top: 12px;
+    }
 }
 
 /*unstyle list*/
@@ -53,10 +68,12 @@ li {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-/* set contact container to occupy full width without causing horizontal scroll */
-.container.my-contact {
-    width: 100%;
-}
+
+    /* set contact container to occupy full width without causing horizontal scroll */
+    .container.my-contact {
+        width: 100%;
+    }
+
     width: 100vw;
 }
 
@@ -81,7 +98,7 @@ body {
     font-family: 'Playfair Display', 'Roboto', sans-serif;
     color: white;
     line-height: 1.6;
-/* consolidated .container rules moved earlier to keep responsive sizing consistent */
+    /* consolidated .container rules moved earlier to keep responsive sizing consistent */
     padding: 20px;
 }
 
