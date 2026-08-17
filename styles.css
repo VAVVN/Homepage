@@ -138,3 +138,64 @@ footer {
     background: #333;
     color: #fff;
 }
+
+/* ===== Projects section ===== */
+
+.my-projects h2 {
+    margin-bottom: 16px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background: rgba(0, 0, 0, 0.55);
+    border-radius: 8px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.project-card h3 {
+    font-size: 1.1rem;
+}
+
+.project-note {
+    font-size: 0.7rem;
+    font-weight: 400;
+    color: #ccc;
+}
+
+.project-card p {
+    font-size: 0.9rem;
+    flex-grow: 1;
+}
+
+.project-tags i {
+    font-size: 22px;
+    margin-right: 8px;
+    color: inherit;
+}
+
+.project-links {
+    display: flex;
+    gap: 12px;
+}
+
+.project-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 6px 12px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    font-size: 0.85rem;
+    transition: background 0.2s ease;
+}
+
+.project-links a:hover {
+    background: #575757;
+}
