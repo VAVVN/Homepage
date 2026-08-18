@@ -139,6 +139,30 @@ footer {
     color: #fff;
 }
 
+/* ===== Skills + Projects row ===== */
+
+.skills-projects-row {
+    width: 90vw;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: minmax(200px, 280px) 1fr;
+    gap: 24px;
+    align-items: start;
+}
+
+.skills-projects-row .container {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .skills-projects-row {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* ===== Projects section ===== */
 
 .my-projects h2 {
