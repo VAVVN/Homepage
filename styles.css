@@ -23,6 +23,7 @@
     /* anchor absolute children */
     padding-bottom: 36px;
     /* leave space so text doesn't overlap the icon */
+    color: #1b5e20;
 }
 
 /* place the GitHub icon at the bottom-left of the .profile-info box */
@@ -139,8 +140,12 @@ footer {
     color: #fff;
 }
 
+.my-contact {
+    color: #1b5e20;
+}
+
 .my-contact a {
-    color: #fff;
+    color: #1b5e20;
 }
 
 /* ===== Skills + Projects row ===== */
@@ -168,6 +173,15 @@ footer {
 }
 
 /* ===== Projects section ===== */
+
+.my-skills h2,
+.my-projects h2 {
+    color: #1b5e20;
+}
+
+.my-skills li {
+    color: #1b5e20;
+}
 
 .my-projects h2 {
     margin-bottom: 16px;
