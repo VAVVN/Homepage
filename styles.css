@@ -139,6 +139,22 @@ footer {
     color: #fff;
 }
 
+.my-contact .cv-button {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 6px 14px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: background 0.2s ease;
+}
+
+.my-contact .cv-button:hover {
+    background: #575757;
+}
+
 /* ===== Skills + Projects row ===== */
 
 .skills-projects-row {
