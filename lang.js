@@ -4,7 +4,7 @@
 // the page in Vietnamese directly (handy for sharing).
 
 const VI = {
-    'page.title': 'Vương Anh Vũ | Hồ sơ năng lực',
+    'page.title': 'Vu from Vietnam',
 
     'about.title': 'Giới thiệu',
     'about.text': 'Tôi tên là Vương Anh Vũ. Tôi là một kỹ sư có kỹ năng tiếng Anh tốt, với chứng chỉ IELTS 8.0. Tôi luôn bị cuốn hút bởi cách máy tính biến ý tưởng thành hiện thực, và chính điều đó đã thôi thúc tôi theo đuổi con đường phát triển web. Với tốc độ triển khai chưa từng có nhờ các công cụ AI, kết hợp cùng kỹ năng kỹ thuật, sự hiểu biết về các xu hướng hiện nay và tầm nhìn rõ ràng cho một tương lai nhiều biến động, tôi muốn giúp mọi người đưa ý tưởng của mình ra thế giới và góp phần thúc đẩy xã hội phát triển bằng công nghệ. Song song với hành trình công nghệ, tôi còn là một giáo viên tiếng Anh. Tôi tin rằng tiếng Anh là ngôn ngữ của thế giới ngày nay, nơi công nghệ dẫn dắt mọi thứ, và tôi đam mê giúp thế hệ trẻ Việt Nam làm chủ ngôn ngữ này để có một tương lai tươi sáng hơn. Việc giảng dạy cho phép tôi trao cho học sinh những công cụ cần thiết để kết nối với thế giới và mở ra nhiều cơ hội. Ngoài công việc, tôi thích chơi tennis để luôn năng động và giữ tinh thần cạnh tranh, và tôi tìm thấy sự bình yên trong thiên nhiên, giúp cân bằng cuộc sống. Tất cả những đam mê ấy tạo nên con người tôi: một lập trình viên, một giáo viên và một người không ngừng học hỏi.',
