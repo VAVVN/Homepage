@@ -25,6 +25,12 @@
     /* leave space so text doesn't overlap the icon */
 }
 
+/* justify the introduction so both the left and right edges are straight */
+.profile-info p {
+    text-align: justify;
+    hyphens: auto;
+}
+
 /* place the GitHub icon at the bottom-left of the .profile-info box */
 .profile-info .devicon-github-original {
     margin-top: 16px;
@@ -64,17 +70,12 @@ li {
 
 /* set all containers responsive: use 90vw up to a max-width for large screens */
 .container {
-    width: 90vw;
+    /* 100% of the body's content box (body already has padding), so nothing
+       overflows the screen on mobile */
+    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-
-    /* set contact container to occupy full width without causing horizontal scroll */
-    .container.my-contact {
-        width: 100%;
-    }
-
-    width: 100vw;
 }
 
 i {
