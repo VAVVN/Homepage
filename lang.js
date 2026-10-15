@@ -30,7 +30,7 @@ const VI = {
     'desc.cv-application': 'Công cụ tạo CV tương tác, xây dựng bằng React.',
     'desc.weather-app': 'Ứng dụng tra cứu thời tiết, lấy dữ liệu trực tiếp từ API thời tiết.',
     'desc.library': 'Ứng dụng theo dõi và quản lý danh sách sách cần đọc của cá nhân.',
-    'desc.tic-tac-toe': 'Trò chơi cờ caro 3x3 kinh điển cho hai người, viết bằng JavaScript thuần.',
+    'desc.tic-tac-toe': 'Trò chơi cờ caro kinh điển cho hai người trên bàn 10x10, ai có 5 quân liên tiếp trước sẽ thắng, viết bằng JavaScript thuần.',
     'desc.calculator': 'Máy tính cơ bản viết bằng HTML, CSS và JavaScript.',
     'desc.etch-a-sketch': 'Ứng dụng vẽ trên lưới ô vuông, viết bằng JavaScript thuần và thao tác DOM.',
     'desc.rock-paper-scissors': 'Trò chơi oẳn tù tì kinh điển có tính điểm, viết bằng JavaScript thuần.',
