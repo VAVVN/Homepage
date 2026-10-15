@@ -25,6 +25,34 @@
     /* leave space so text doesn't overlap the icon */
 }
 
+/* EN | VI language switcher (see lang.js) */
+.lang-switch {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.lang-switch button {
+    padding: 4px 10px;
+    background: transparent;
+    color: #fff;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.lang-switch button[aria-pressed="true"] {
+    background: #fff;
+    color: #000;
+}
+
 /* justify the introduction so both the left and right edges are straight */
 .profile-info p {
     text-align: justify;

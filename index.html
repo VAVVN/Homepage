@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Vương Anh Vũ | Portfolio</title>
 
     <!-- Import Playfair Display và Roboto -->
     <link
@@ -16,25 +16,31 @@
 </head>
 
 <body>
+    <!-- language switcher: English by default, Vietnamese via lang.js -->
+    <div class="lang-switch" role="group" aria-label="Language">
+        <button type="button" data-lang="en">EN</button>
+        <button type="button" data-lang="vi">VI</button>
+    </div>
+
     <div class="container my-profile">
         <!-- set profile picture to sit on left on desktop, on top left on tablet and on top on mobile  -->
         <img src="./assets/profile.jpg" alt="Profile Picture" class="profile-pic">
         <!-- set name and about me to sit on right on desktop, on top right on tablet and under my profile picture on mobile  -->
         <div class="profile-info">
-            <h2>About me</h2>
-            <p>My name is Vương Anh Vũ, it's a Vietnamese name. I am an engineer with strong English skills, holding an IELTS score of 8.0. My fascination lies in how computers transform ideas into reality, which inspired me to pursue this very web development career. With unprecedented speed of deployment thanks to AI tools, in combination with my technical skills and my understanding of current trends and clear vision for an uncertain future, I want to help people publish their ideas to the world and contribute to moving society forward through technology. Alongside my technical journey, I am also an English teacher. I believe English is the language of today’s technology-driven world, and I am passionate about guiding the younger generation in Vietnam to master it for a brighter future. Teaching allows me to empower students with the tools they need to connect globally and unlock opportunities. Beyond work, I enjoy playing tennis, which keeps me active and competitive, and I find peace in nature, which balances my life. Together, these passions shape who I am: a developer, a teacher, and a lifelong learner.</p>
+            <h2 data-i18n="about.title">About me</h2>
+            <p data-i18n="about.text">My name is Vương Anh Vũ, it's a Vietnamese name. I am an engineer with strong English skills, holding an IELTS score of 8.0. My fascination lies in how computers transform ideas into reality, which inspired me to pursue this very web development career. With unprecedented speed of deployment thanks to AI tools, in combination with my technical skills and my understanding of current trends and clear vision for an uncertain future, I want to help people publish their ideas to the world and contribute to moving society forward through technology. Alongside my technical journey, I am also an English teacher. I believe English is the language of today’s technology-driven world, and I am passionate about guiding the younger generation in Vietnam to master it for a brighter future. Teaching allows me to empower students with the tools they need to connect globally and unlock opportunities. Beyond work, I enjoy playing tennis, which keeps me active and competitive, and I find peace in nature, which balances my life. Together, these passions shape who I am: a developer, a teacher, and a lifelong learner.</p>
         </div>
     </div>
 
     <div class="container my-contact">
-        <h2>Contact me</h2>
-        <p>mail: <a href="mailto:anhvuvuongbs@gmail.com">anhvuvuongbs@gmail.com</a></p>
-        <a class="cv-button" href="./assets/Vuong_Anh_Vu_CV.pdf" target="_blank" rel="noopener">View my CV (PDF)</a>
+        <h2 data-i18n="contact.title">Contact me</h2>
+        <p><span data-i18n="contact.mail">mail:</span> <a href="mailto:anhvuvuongbs@gmail.com">anhvuvuongbs@gmail.com</a></p>
+        <a class="cv-button" href="./assets/Vuong_Anh_Vu_CV.pdf" target="_blank" rel="noopener" data-i18n="contact.cv">View my CV (PDF)</a>
     </div>
 
     <div class="skills-projects-row">
     <div class="container my-skills">
-        <h2>My skills</h2>
+        <h2 data-i18n="skills.title">My skills</h2>
         <ul>
             <li>HTML</li>
             <li>CSS</li>
@@ -50,7 +56,7 @@
     </div>
 
     <div class="container my-projects">
-        <h2>Projects</h2>
+        <h2 data-i18n="projects.title">Projects</h2>
         <div class="project-grid">
 
             <div class="project-card featured">
@@ -58,196 +64,239 @@
                     <img src="./assets/ielts-speaking.png" alt="IELTS Speaking Practice app preview">
                 </a>
                 <div class="project-body">
-                    <span class="project-badge">Featured</span>
-                    <h3>IELTS Speaking Practice <span class="project-note">(may take ~30s to wake up)</span></h3>
-                    <p>Speak your answer to real IELTS questions and get an AI-cleaned transcript, a rough band score with feedback, and a Band 7.5+ sample answer you can listen to. Built with React, Express and the Claude API.</p>
+                    <span class="project-badge" data-i18n="projects.featured">Featured</span>
+                    <h3>IELTS Speaking Practice <span class="project-note" data-i18n="projects.wake">(may take ~30s to wake up)</span></h3>
+                    <p data-i18n="desc.ielts-speaking-practice">Speak your answer to real IELTS questions and get an AI-cleaned transcript, a rough band score with feedback, and a Band 7.5+ sample answer you can listen to. Built with React, Express and the Claude API.</p>
                     <div class="project-tags">
                         <i class="devicon-react-original colored" title="React"></i>
                         <i class="devicon-nodejs-plain colored" title="Node.js"></i>
                     </div>
                     <div class="project-links">
-                        <a href="https://ielts-speaking-app.onrender.com/" target="_blank" rel="noopener">Live preview</a>
-                        <a href="https://github.com/VAVVN/ielts-speaking-app" target="_blank" rel="noopener">Code</a>
+                        <a href="https://ielts-speaking-app.onrender.com/" target="_blank" rel="noopener" data-i18n="projects.live">Live preview</a>
+                        <a href="https://github.com/VAVVN/ielts-speaking-app" target="_blank" rel="noopener" data-i18n="projects.code">Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card featured">
+                <a class="project-thumb" href="https://ielts-writing-app-dk7k.onrender.com/" target="_blank" rel="noopener">
+                    <img src="./assets/ielts-writing.png" alt="IELTS Writing Practice app preview">
+                </a>
+                <div class="project-body">
+                    <h3>IELTS Writing Practice <span class="project-note" data-i18n="projects.wake">(may take ~30s to wake up)</span></h3>
+                    <p data-i18n="desc.ielts-writing-practice">Practise IELTS Writing Task 1 and Task 2 with questions from this quarter's real tests. Submit your essay to see up to 9 key mistakes highlighted with corrections, plus a Band 7.5+ version that keeps your own ideas. Built with React, Express and the Claude API.</p>
+                    <div class="project-tags">
+                        <i class="devicon-react-original colored" title="React"></i>
+                        <i class="devicon-nodejs-plain colored" title="Node.js"></i>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://ielts-writing-app-dk7k.onrender.com/" target="_blank" rel="noopener" data-i18n="projects.live">Live preview</a>
+                        <a href="https://github.com/VAVVN/ielts-writing-app" target="_blank" rel="noopener" data-i18n="projects.code">Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card featured">
+                <a class="project-thumb" href="https://my-vietnam-trip.onrender.com/" target="_blank" rel="noopener">
+                    <img src="./assets/vietnam-planner.png" alt="Vietnam Itinerary Planner app preview">
+                </a>
+                <div class="project-body">
+                    <h3>Vietnam Itinerary Planner <span class="project-note" data-i18n="projects.wake">(may take ~30s to wake up)</span></h3>
+                    <p data-i18n="desc.vietnam-itinerary-planner">AI trip planner for Vietnam: enter your days, interests and places, and get a day-by-day itinerary with cited sources. Uses retrieval (RAG) over a curated Vietnam knowledge base, built with Python, FastAPI, Supabase pgvector and the Claude API.</p>
+                    <div class="project-tags">
+                        <i class="devicon-python-plain colored" title="Python"></i>
+                        <i class="devicon-fastapi-plain colored" title="FastAPI"></i>
+                        <i class="devicon-supabase-plain colored" title="Supabase"></i>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://my-vietnam-trip.onrender.com/" target="_blank" rel="noopener" data-i18n="projects.live">Live preview</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card featured">
+                <a class="project-thumb" href="https://vavvn.github.io/quay-ly-nha-hang/" target="_blank" rel="noopener">
+                    <img src="./assets/bun-cha-nha-ty.png" alt="Bún Chả Nhà Ty ordering app preview">
+                </a>
+                <div class="project-body">
+                    <h3>Bún Chả Nhà Ty</h3>
+                    <p data-i18n="desc.bun-cha-nha-ty">Order and billing app for a real Vietnamese restaurant: track 11 tables at a glance, add dishes to each table's order, check out, and edit the menu and prices. Works offline in the browser, built with vanilla JavaScript.</p>
+                    <div class="project-tags">
+                        <i class="devicon-html5-plain colored" title="HTML"></i>
+                        <i class="devicon-javascript-plain colored" title="JavaScript"></i>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://vavvn.github.io/quay-ly-nha-hang/" target="_blank" rel="noopener" data-i18n="projects.live">Live preview</a>
+                        <a href="https://github.com/VAVVN/quay-ly-nha-hang" target="_blank" rel="noopener" data-i18n="projects.code">Code</a>
                     </div>
                 </div>
             </div>
 
             <div class="project-card">
-                <h3>Bún Chả Nhà Ty</h3>
-                <p>Order and billing app for a real Vietnamese restaurant: track 11 tables at a glance, add dishes to each table's order, check out, and edit the menu and prices. Works offline in the browser, built with vanilla JavaScript.</p>
-                <div class="project-tags">
-                    <i class="devicon-html5-plain colored" title="HTML"></i>
-                    <i class="devicon-javascript-plain colored" title="JavaScript"></i>
-                </div>
-                <div class="project-links">
-                    <a href="https://vavvn.github.io/quay-ly-nha-hang/" target="_blank" rel="noopener">Live preview</a>
-                    <a href="https://github.com/VAVVN/quay-ly-nha-hang" target="_blank" rel="noopener">Code</a>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <h3>Odin-Book <span class="project-note">(may take ~30s to wake up)</span></h3>
-                <p>Full-stack social app with authentication, built with Node.js, Express and a database.</p>
+                <h3>Odin-Book <span class="project-note" data-i18n="projects.wake">(may take ~30s to wake up)</span></h3>
+                <p data-i18n="desc.odin-book">Full-stack social app with authentication, built with Node.js, Express and a database.</p>
                 <div class="project-tags">
                     <i class="devicon-nodejs-plain colored" title="Node.js"></i>
                 </div>
                 <div class="project-links">
-                    <a href="https://odin-book-0f6q.onrender.com/login" target="_blank" rel="noopener">Live preview</a>
-                    <a href="https://github.com/VAVVN/odin-book" target="_blank" rel="noopener">Code</a>
+                    <a href="https://odin-book-0f6q.onrender.com/login" target="_blank" rel="noopener" data-i18n="projects.live">Live preview</a>
+                    <a href="https://github.com/VAVVN/odin-book" target="_blank" rel="noopener" data-i18n="projects.code">Code</a>
                 </div>
             </div>
 
             <div class="project-card">
-                <h3>Mini Message Board <span class="project-note">(may take ~30s to wake up)</span></h3>
-                <p>Server-rendered message board built with Node.js and Express.</p>
+                <h3>Mini Message Board <span class="project-note" data-i18n="projects.wake">(may take ~30s to wake up)</span></h3>
+                <p data-i18n="desc.mini-message-board">Server-rendered message board built with Node.js and Express.</p>
                 <div class="project-tags">
                     <i class="devicon-nodejs-plain colored" title="Node.js"></i>
                 </div>
                 <div class="project-links">
-                    <a href="https://mini-message-board-x5ap.onrender.com/" target="_blank" rel="noopener">Live preview</a>
-                    <a href="https://github.com/VAVVN/mini-message-board" target="_blank" rel="noopener">Code</a>
+                    <a href="https://mini-message-board-x5ap.onrender.com/" target="_blank" rel="noopener" data-i18n="projects.live">Live preview</a>
+                    <a href="https://github.com/VAVVN/mini-message-board" target="_blank" rel="noopener" data-i18n="projects.code">Code</a>
                 </div>
             </div>
 
             <div class="project-card">
                 <h3>CV Application</h3>
-                <p>Interactive CV/resume builder built with React.</p>
+                <p data-i18n="desc.cv-application">Interactive CV/resume builder built with React.</p>
                 <div class="project-tags">
                     <i class="devicon-react-original colored" title="React"></i>
                 </div>
                 <div class="project-links">
-                    <a href="https://cv-application-react-vav.netlify.app/" target="_blank" rel="noopener">Live preview</a>
-                    <a href="https://github.com/VAVVN/CV-Application" target="_blank" rel="noopener">Code</a>
+                    <a href="https://cv-application-react-vav.netlify.app/" target="_blank" rel="noopener" data-i18n="projects.live">Live preview</a>
+                    <a href="https://github.com/VAVVN/CV-Application" target="_blank" rel="noopener" data-i18n="projects.code">Code</a>
                 </div>
             </div>
 
             <div class="project-card">
                 <h3>Weather App</h3>
-                <p>Weather lookup app that fetches live data from a weather API.</p>
+                <p data-i18n="desc.weather-app">Weather lookup app that fetches live data from a weather API.</p>
                 <div class="project-tags">
                     <i class="devicon-javascript-plain colored" title="JavaScript"></i>
                 </div>
                 <div class="project-links">
-                    <a href="https://vavvn.github.io/weather-app/" target="_blank" rel="noopener">Live preview</a>
-                    <a href="https://github.com/VAVVN/weather-app" target="_blank" rel="noopener">Code</a>
+                    <a href="https://vavvn.github.io/weather-app/" target="_blank" rel="noopener" data-i18n="projects.live">Live preview</a>
+                    <a href="https://github.com/VAVVN/weather-app" target="_blank" rel="noopener" data-i18n="projects.code">Code</a>
                 </div>
             </div>
 
             <div class="project-card">
                 <h3>Library</h3>
-                <p>Book-tracking app for managing a personal reading list.</p>
+                <p data-i18n="desc.library">Book-tracking app for managing a personal reading list.</p>
                 <div class="project-tags">
                     <i class="devicon-javascript-plain colored" title="JavaScript"></i>
                 </div>
                 <div class="project-links">
-                    <a href="https://vavvn.github.io/Library/" target="_blank" rel="noopener">Live preview</a>
-                    <a href="https://github.com/VAVVN/Library" target="_blank" rel="noopener">Code</a>
+                    <a href="https://vavvn.github.io/Library/" target="_blank" rel="noopener" data-i18n="projects.live">Live preview</a>
+                    <a href="https://github.com/VAVVN/Library" target="_blank" rel="noopener" data-i18n="projects.code">Code</a>
                 </div>
             </div>
 
             <div class="project-card">
                 <h3>Tic Tac Toe</h3>
-                <p>Classic two-player game built with vanilla JavaScript.</p>
+                <p data-i18n="desc.tic-tac-toe">Classic two-player game built with vanilla JavaScript.</p>
                 <div class="project-tags">
                     <i class="devicon-javascript-plain colored" title="JavaScript"></i>
                 </div>
                 <div class="project-links">
-                    <a href="https://vavvn.github.io/Tic-Tac-Toe-JS/" target="_blank" rel="noopener">Live preview</a>
-                    <a href="https://github.com/VAVVN/Tic-Tac-Toe-JS" target="_blank" rel="noopener">Code</a>
+                    <a href="https://vavvn.github.io/Tic-Tac-Toe-JS/" target="_blank" rel="noopener" data-i18n="projects.live">Live preview</a>
+                    <a href="https://github.com/VAVVN/Tic-Tac-Toe-JS" target="_blank" rel="noopener" data-i18n="projects.code">Code</a>
                 </div>
             </div>
 
             <div class="project-card">
                 <h3>Calculator</h3>
-                <p>Basic calculator built with HTML, CSS and JavaScript.</p>
+                <p data-i18n="desc.calculator">Basic calculator built with HTML, CSS and JavaScript.</p>
                 <div class="project-tags">
                     <i class="devicon-javascript-plain colored" title="JavaScript"></i>
                 </div>
                 <div class="project-links">
-                    <a href="https://vavvn.github.io/Calculator/" target="_blank" rel="noopener">Live preview</a>
-                    <a href="https://github.com/VAVVN/Calculator" target="_blank" rel="noopener">Code</a>
+                    <a href="https://vavvn.github.io/Calculator/" target="_blank" rel="noopener" data-i18n="projects.live">Live preview</a>
+                    <a href="https://github.com/VAVVN/Calculator" target="_blank" rel="noopener" data-i18n="projects.code">Code</a>
                 </div>
             </div>
 
             <div class="project-card">
                 <h3>Etch-a-Sketch</h3>
-                <p>Grid-based drawing app built with vanilla JavaScript and DOM manipulation.</p>
+                <p data-i18n="desc.etch-a-sketch">Grid-based drawing app built with vanilla JavaScript and DOM manipulation.</p>
                 <div class="project-tags">
                     <i class="devicon-javascript-plain colored" title="JavaScript"></i>
                 </div>
                 <div class="project-links">
-                    <a href="https://vavvn.github.io/Etch-a-Sketch/" target="_blank" rel="noopener">Live preview</a>
-                    <a href="https://github.com/VAVVN/Etch-a-Sketch" target="_blank" rel="noopener">Code</a>
+                    <a href="https://vavvn.github.io/Etch-a-Sketch/" target="_blank" rel="noopener" data-i18n="projects.live">Live preview</a>
+                    <a href="https://github.com/VAVVN/Etch-a-Sketch" target="_blank" rel="noopener" data-i18n="projects.code">Code</a>
                 </div>
             </div>
 
             <div class="project-card">
                 <h3>Rock Paper Scissors</h3>
-                <p>Classic game with score tracking, built with vanilla JavaScript.</p>
+                <p data-i18n="desc.rock-paper-scissors">Classic game with score tracking, built with vanilla JavaScript.</p>
                 <div class="project-tags">
                     <i class="devicon-javascript-plain colored" title="JavaScript"></i>
                 </div>
                 <div class="project-links">
-                    <a href="https://vavvn.github.io/Rock-Paper-Scissors/" target="_blank" rel="noopener">Live preview</a>
-                    <a href="https://github.com/VAVVN/Rock-Paper-Scissors" target="_blank" rel="noopener">Code</a>
+                    <a href="https://vavvn.github.io/Rock-Paper-Scissors/" target="_blank" rel="noopener" data-i18n="projects.live">Live preview</a>
+                    <a href="https://github.com/VAVVN/Rock-Paper-Scissors" target="_blank" rel="noopener" data-i18n="projects.code">Code</a>
                 </div>
             </div>
 
             <div class="project-card">
                 <h3>Admin Dashboard</h3>
-                <p>Responsive admin dashboard layout built with intermediate HTML and CSS.</p>
+                <p data-i18n="desc.admin-dashboard">Responsive admin dashboard layout built with intermediate HTML and CSS.</p>
                 <div class="project-tags">
                     <i class="devicon-html5-plain colored" title="HTML"></i>
                     <i class="devicon-css3-plain colored" title="CSS"></i>
                 </div>
                 <div class="project-links">
-                    <a href="https://vavvn.github.io/Admin-Dashboard/" target="_blank" rel="noopener">Live preview</a>
-                    <a href="https://github.com/VAVVN/Admin-Dashboard" target="_blank" rel="noopener">Code</a>
+                    <a href="https://vavvn.github.io/Admin-Dashboard/" target="_blank" rel="noopener" data-i18n="projects.live">Live preview</a>
+                    <a href="https://github.com/VAVVN/Admin-Dashboard" target="_blank" rel="noopener" data-i18n="projects.code">Code</a>
                 </div>
             </div>
 
             <div class="project-card">
                 <h3>Sign-up Form</h3>
-                <p>Styled sign-up form focused on layout and form design with CSS.</p>
+                <p data-i18n="desc.sign-up-form">Styled sign-up form focused on layout and form design with CSS.</p>
                 <div class="project-tags">
                     <i class="devicon-html5-plain colored" title="HTML"></i>
                     <i class="devicon-css3-plain colored" title="CSS"></i>
                 </div>
                 <div class="project-links">
-                    <a href="https://vavvn.github.io/Sign-up-Form/" target="_blank" rel="noopener">Live preview</a>
-                    <a href="https://github.com/VAVVN/Sign-up-Form" target="_blank" rel="noopener">Code</a>
+                    <a href="https://vavvn.github.io/Sign-up-Form/" target="_blank" rel="noopener" data-i18n="projects.live">Live preview</a>
+                    <a href="https://github.com/VAVVN/Sign-up-Form" target="_blank" rel="noopener" data-i18n="projects.code">Code</a>
                 </div>
             </div>
 
             <div class="project-card">
                 <h3>Landing Page</h3>
-                <p>Single-page marketing landing page built with HTML and CSS.</p>
+                <p data-i18n="desc.landing-page">Single-page marketing landing page built with HTML and CSS.</p>
                 <div class="project-tags">
                     <i class="devicon-html5-plain colored" title="HTML"></i>
                     <i class="devicon-css3-plain colored" title="CSS"></i>
                 </div>
                 <div class="project-links">
-                    <a href="https://vavvn.github.io/landing-page" target="_blank" rel="noopener">Live preview</a>
-                    <a href="https://github.com/VAVVN/landing-page" target="_blank" rel="noopener">Code</a>
+                    <a href="https://vavvn.github.io/landing-page" target="_blank" rel="noopener" data-i18n="projects.live">Live preview</a>
+                    <a href="https://github.com/VAVVN/landing-page" target="_blank" rel="noopener" data-i18n="projects.code">Code</a>
                 </div>
             </div>
 
             <div class="project-card">
                 <h3>Recipes</h3>
-                <p>Recipe listing site built with HTML and CSS.</p>
+                <p data-i18n="desc.recipes">Recipe listing site built with HTML and CSS.</p>
                 <div class="project-tags">
                     <i class="devicon-html5-plain colored" title="HTML"></i>
                     <i class="devicon-css3-plain colored" title="CSS"></i>
                 </div>
                 <div class="project-links">
-                    <a href="https://vavvn.github.io/odin-recipes/" target="_blank" rel="noopener">Live preview</a>
-                    <a href="https://github.com/VAVVN/odin-recipes" target="_blank" rel="noopener">Code</a>
+                    <a href="https://vavvn.github.io/odin-recipes/" target="_blank" rel="noopener" data-i18n="projects.live">Live preview</a>
+                    <a href="https://github.com/VAVVN/odin-recipes" target="_blank" rel="noopener" data-i18n="projects.code">Code</a>
                 </div>
             </div>
 
         </div>
     </div>
     </div>
+
+    <script src="lang.js"></script>
 </body>
 
 </html>
