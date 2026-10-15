@@ -20,10 +20,12 @@ const VI = {
     'projects.wake': '(có thể mất ~30 giây để khởi động)',
     'projects.live': 'Xem trực tiếp',
     'projects.code': 'Mã nguồn',
+    'projects.private': 'Dự án nội bộ: không công khai vì sử dụng dữ liệu của tổ chức.',
 
     'desc.ielts-speaking-practice': 'Trả lời bằng giọng nói các câu hỏi IELTS thật và nhận bản ghi đã được AI chỉnh sửa, điểm band ước tính kèm nhận xét, cùng câu trả lời mẫu Band 7.5+ có thể nghe lại. Xây dựng bằng React, Express và Claude API.',
     'desc.ielts-writing-practice': 'Luyện IELTS Writing Task 1 và Task 2 với đề từ các bài thi thật trong quý này. Nộp bài để xem tối đa 9 lỗi quan trọng được đánh dấu kèm cách sửa, cùng một phiên bản Band 7.5+ giữ nguyên ý của bạn. Xây dựng bằng React, Express và Claude API.',
     'desc.vietnam-itinerary-planner': 'Trợ lý AI lên kế hoạch du lịch Việt Nam: nhập số ngày, sở thích và địa điểm để nhận lịch trình từng ngày kèm nguồn trích dẫn. Sử dụng kỹ thuật truy xuất (RAG) trên kho kiến thức về Việt Nam được tuyển chọn, xây dựng bằng Python, FastAPI, Supabase pgvector và Claude API.',
+    'desc.maintenance-assistant-agent': 'Trợ lý AI xây dựng bằng Microsoft Copilot Studio, trả lời câu hỏi của người dùng về tình trạng thiết bị, lệnh công việc (work order) hoặc khối lượng công việc của giám sát viên. Agent chạy trong Microsoft Teams và truy vấn dữ liệu bảo trì từ Power BI dataset bằng DAX thông qua các agent flow của Power Automate.',
     'desc.bun-cha-nha-ty': 'Ứng dụng gọi món và tính tiền cho một quán ăn Việt Nam thật: theo dõi 11 bàn trong nháy mắt, thêm món cho từng bàn, thanh toán, chỉnh sửa thực đơn và giá. Hoạt động offline ngay trên trình duyệt, viết bằng JavaScript thuần.',
     'desc.odin-book': 'Mạng xã hội full-stack có đăng nhập, xây dựng bằng Node.js, Express và cơ sở dữ liệu.',
     'desc.mini-message-board': 'Bảng tin nhắn render phía server, xây dựng bằng Node.js và Express.',
